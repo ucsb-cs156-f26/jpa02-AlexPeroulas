@@ -42,11 +42,11 @@ public class Developer {
         // TODO: Change this to your team name
         Team team = new Team("f26-13");
         team.addMember("Alex");
-        team.addMember("Bob");
-        team.addMember("Chris G.");
-        team.addMember("Danny");
-        team.addMember("Eve");
-        team.addMember("Frances");
+        team.addMember("Michael");
+        team.addMember("Kun");
+        team.addMember("Max");
+        team.addMember("Akshaj");
+        team.addMember("Branden");
         return team;
     }
 }
