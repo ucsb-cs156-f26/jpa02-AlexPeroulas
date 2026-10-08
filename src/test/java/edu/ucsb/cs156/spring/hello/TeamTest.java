@@ -37,6 +37,19 @@ public class TeamTest {
         assert(!team.equals("not a team"));
     }
     
+    @Test
+    public void check_team_equals_with_same_name_and_members(){
+        Team other = new Team("test-team");
+        assertEquals(true, team.equals(other));
+    }
+
+    @Test 
+    public void check_team_not_equal_with_same_name_but_dif_members()
+    {
+        Team other = new Team("test-team");
+        team.addMember("OrangeBlue");
+        assertEquals(false, team.equals(other));
+    }
 
     @Test 
     public void check_team_to_string()
